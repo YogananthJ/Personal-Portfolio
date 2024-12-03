@@ -34,3 +34,14 @@ themeButton.addEventListener("click", () => {
 });
 
 
+// SKILLS
+const skillContent = document.querySelectorAll(".skill");
+const skillHeader = document.querySelectorAll(".skills_header");
+const skillContentArr = Array.from(skillContent);
+const skillHeaderArr = Array.from(skillHeader);
+
+skillHeaderArr.forEach((element, idx) => {
+  element.addEventListener("click", function () {
+    skillContentArr[idx].classList.toggle("skills_open");
+  });
+});
